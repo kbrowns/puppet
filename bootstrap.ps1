@@ -14,8 +14,8 @@ If (test-path 'puppet'){
 
 git clone https://github.com/kbrowns/puppet.git
 
-puppet module install --force rismoney/chocolatey
-
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+
+puppet module install --force rismoney/chocolatey
 
 puppet apply puppet/site.pp
