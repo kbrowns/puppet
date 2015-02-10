@@ -3,9 +3,10 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 $Env:Path += ";" + $Env.ALLUSERSPROFILE + "\chocolatey\bin"
 
 choco install puppet
+choco install git
 
-RefreshEnv
+git clone https://github.com/kbrowns/puppet.git
 
-puppet module install --force rismoney/chocolatey
+puppet/bootstrap-puppet.ps1
 
-puppet apply site.pp
+puppet/apply-site.ps1

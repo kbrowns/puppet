@@ -1,0 +1,1 @@
+puppet apply site.pp
