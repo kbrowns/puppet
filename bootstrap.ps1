@@ -18,4 +18,4 @@ set-location -path puppet
 
 get-location
 
-puppet/bootstrap-puppet.ps1
+bootstrap-puppet.ps1
