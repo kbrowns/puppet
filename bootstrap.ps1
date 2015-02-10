@@ -9,7 +9,7 @@ choco install git
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
 If (Test-Path 'puppet'){
-	Remove-Item 'puppet'
+	Remove-Item 'puppet' -Force -Recurse
 }
 
 git clone https://github.com/kbrowns/puppet.git
