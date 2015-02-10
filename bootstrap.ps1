@@ -16,4 +16,6 @@ git clone https://github.com/kbrowns/puppet.git
 
 set-location -path puppet
 
+get-location
+
 puppet/bootstrap-puppet.ps1
