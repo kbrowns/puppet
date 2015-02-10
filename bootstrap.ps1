@@ -6,7 +6,9 @@ choco install puppet
 
 choco install git
 
-bootstrap-git-clone.ps1
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+
+git clone https://github.com/kbrowns/puppet.git
 
 puppet/bootstrap-puppet.ps1
 
