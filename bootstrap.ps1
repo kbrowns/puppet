@@ -8,8 +8,10 @@ choco install git
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
+If (Test-Path 'puppet'){
+	Remove-Item 'puppet'
+}
+
 git clone https://github.com/kbrowns/puppet.git
 
 puppet/bootstrap-puppet.ps1
-
-puppet/apply-site.ps1
