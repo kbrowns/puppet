@@ -14,4 +14,6 @@ If (test-path 'puppet'){
 
 git clone https://github.com/kbrowns/puppet.git
 
-& .\puppet\bootstrap-puppet.ps1
+set-location -path puppet
+
+& bootstrap-puppet.ps1
